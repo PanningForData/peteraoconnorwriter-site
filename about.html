@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
   <div class="wrap">
     <header class="site-header">
       <h1 class="page-title">About</h1>
@@ -16,18 +17,18 @@
         <a href="index.html">Home</a>
         <a href="plays.html">Plays</a>
         <a href="stories.html">Stories</a>
-        <a href="about.html" class="active">About</a>
+        <a href="about.html" class="active" aria-current="page">About</a>
         <a href="contact.html">Contact</a>
       </nav>
     </header>
 
-    <main class="page-content">
-      <p>Peter A. O'Connor is a playwright and short story writer based in Perth, Western Australia.</p>
+    <main id="main-content" class="page-content">
+      <p class="lede">Peter A. O'Connor is a playwright and short story writer based in Perth, Western Australia.</p>
       <p>His work blends dark humour with literary fiction and often explores regret, redemption, and the strange moments where the absurd and the tragic meet.</p>
       <p>He writes stories and plays that move between the comic and the melancholy, with a particular interest in voices on the edge of change.</p>
     </main>
 
-    <footer>
+    <footer aria-label="Site footer">
       <p><a href="contact.html">Get in touch</a></p>
     </footer>
   </div>

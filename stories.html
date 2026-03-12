@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
   <div class="wrap">
     <header class="site-header">
       <h1 class="page-title">Stories</h1>
@@ -15,36 +16,39 @@
       <nav class="primary-nav" aria-label="Primary">
         <a href="index.html">Home</a>
         <a href="plays.html">Plays</a>
-        <a href="stories.html" class="active">Stories</a>
+        <a href="stories.html" class="active" aria-current="page">Stories</a>
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
       </nav>
     </header>
 
-    <main class="page-content">
+    <main id="main-content" class="page-content">
       <p class="intro">Short fiction ranging from dark comedy to literary realism, with a fondness for the absurd and the melancholic.</p>
 
-      <div class="work-grid">
-        <article class="work-item">
-          <h3><em>A Hill To Die On</em></h3>
-          <p>Darkly comic short fiction about stubbornness, pride, and the absurdity of moral certainty.</p>
-        </article>
-        <article class="work-item">
-          <h3><em>White Sky</em></h3>
-          <p>Literary short fiction about indecision, longing, and the weight of small choices.</p>
-        </article>
-        <article class="work-item">
-          <h3><em>Battler</em></h3>
-          <p>Literary short fiction shaped by loss, endurance, and emotional weather.</p>
-        </article>
-        <article class="work-item">
-          <h3><em>Lucky Sal</em></h3>
-          <p>Comic short fiction with a mischievous streak and a taste for the absurd.</p>
-        </article>
-      </div>
+      <section aria-labelledby="story-list">
+        <h2 id="story-list">Selected Stories</h2>
+        <div class="work-grid">
+          <article class="work-item">
+            <h3><em>A Hill To Die On</em></h3>
+            <p>Darkly comic short fiction about stubbornness, pride, and the absurdity of moral certainty.</p>
+          </article>
+          <article class="work-item">
+            <h3><em>White Sky</em></h3>
+            <p>Literary short fiction about indecision, longing, and the weight of small choices.</p>
+          </article>
+          <article class="work-item">
+            <h3><em>Battler</em></h3>
+            <p>Literary short fiction shaped by loss, endurance, and emotional weather.</p>
+          </article>
+          <article class="work-item">
+            <h3><em>Lucky Sal</em></h3>
+            <p>Comic short fiction with a mischievous streak and a taste for the absurd.</p>
+          </article>
+        </div>
+      </section>
     </main>
 
-    <footer>
+    <footer aria-label="Site footer">
       <p>More stories will find their way here over time.</p>
     </footer>
   </div>

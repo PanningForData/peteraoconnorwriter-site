@@ -24,13 +24,14 @@
 
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
   <div class="wrap">
     <header class="site-header">
       <h1>Peter A. O'Connor</h1>
       <p class="subtitle">Playwright &amp; Short Story Writer<br />Perth, Western Australia</p>
       <p class="tagline">Darkly comic stories and plays exploring regret, redemption, and the strange places where the living and the dead meet.</p>
       <nav class="primary-nav" aria-label="Primary">
-        <a href="index.html" class="active">Home</a>
+        <a href="index.html" class="active" aria-current="page">Home</a>
         <a href="plays.html">Plays</a>
         <a href="stories.html">Stories</a>
         <a href="about.html">About</a>
@@ -38,13 +39,14 @@
       </nav>
     </header>
 
-    <main>
-      <section>
-        <h2>Selected Plays</h2>
+    <main id="main-content">
+      <section aria-labelledby="selected-plays">
+        <h2 id="selected-plays">Selected Plays</h2>
         <div class="work-grid">
           <article class="work-item">
             <h3><em>Twilight Mire</em></h3>
             <p>A one-act play about ghosts, regret, and the possibility of redemption.</p>
+            <p>Scheduled for production at Stirling Theatre, Innaloo, Western Australia, as part of the 2027 One Act Season.</p>
           </article>
           <article class="work-item">
             <h3><em>SnoozeTime Tales</em></h3>
@@ -53,8 +55,8 @@
         </div>
       </section>
 
-      <section>
-        <h2>Selected Stories</h2>
+      <section aria-labelledby="selected-stories">
+        <h2 id="selected-stories">Selected Stories</h2>
         <div class="work-grid">
           <article class="work-item">
             <h3><em>A Hill To Die On</em></h3>
@@ -75,14 +77,14 @@
         </div>
       </section>
 
-      <section>
-        <h2>About</h2>
-        <p>Peter A. O'Connor is a playwright and short story writer based in Perth, Western Australia.</p>
+      <section aria-labelledby="about-peter">
+        <h2 id="about-peter">About</h2>
+        <p class="lede">Peter A. O'Connor is a playwright and short story writer based in Perth, Western Australia.</p>
         <p>His work blends dark humour with literary fiction and often explores regret, redemption, and the strange moments where the absurd and the tragic meet.</p>
       </section>
     </main>
 
-    <footer>
+    <footer aria-label="Site footer">
       <p>Peter A. O'Connor &copy; 2026</p>
       <p class="footer-line">Some stories are about ghosts. Others are about the living who cannot let go.</p>
     </footer>

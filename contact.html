@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
   <div class="wrap">
     <header class="site-header">
       <h1 class="page-title">Contact</h1>
@@ -17,16 +18,18 @@
         <a href="plays.html">Plays</a>
         <a href="stories.html">Stories</a>
         <a href="about.html">About</a>
-        <a href="contact.html" class="active">Contact</a>
+        <a href="contact.html" class="active" aria-current="page">Contact</a>
       </nav>
     </header>
 
-    <main class="page-content">
+    <main id="main-content" class="page-content">
       <p>For writing enquiries, script requests, or general correspondence:</p>
-      <p class="email-link"><a href="mailto:peteraoconnor@hotmail.com">peteraoconnor@hotmail.com</a></p>
+      <address class="email-link">
+        <a href="mailto:peteraoconnor@hotmail.com">peteraoconnor@hotmail.com</a>
+      </address>
     </main>
 
-    <footer>
+    <footer aria-label="Site footer">
       <p>Peter A. O'Connor &copy; 2026</p>
     </footer>
   </div>
