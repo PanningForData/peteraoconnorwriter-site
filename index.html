@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Peter A. O'Connor | Playwright & Short Story Writer</title>
+  <meta name="description" content="Darkly comic stories and plays by Peter A. O'Connor, exploring regret, redemption, and the strange places where the living and the dead meet." />
+  <style>
+    :root {
+      --bg: #fcfcfb;
+      --text: #222222;
+      --muted: #666666;
+      --line: #dddddd;
+      --link: #1f1f1f;
+      --max: 760px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.7;
+    }
+
+    .wrap {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 3rem 1.5rem 4rem;
+    }
+
+    header {
+      padding: 4rem 0 3rem;
+      border-bottom: 1px solid var(--line);
+    }
+
+    nav {
+      margin-top: 1rem;
+      font-size: 0.98rem;
+    }
+
+    nav a {
+      color: var(--muted);
+      text-decoration: none;
+      margin-right: 1rem;
+    }
+
+    nav a:hover,
+    nav a:focus,
+    a:hover,
+    a:focus {
+      text-decoration: underline;
+      text-underline-offset: 0.15rem;
+    }
+
+    h1, h2, h3 {
+      font-weight: 400;
+      line-height: 1.2;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: clamp(2.2rem, 5vw, 3.4rem);
+      letter-spacing: 0.02rem;
+    }
+
+    .subtitle {
+      margin-top: 0.6rem;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    .tagline {
+      margin-top: 2rem;
+      max-width: 38rem;
+      font-size: 1.2rem;
+    }
+
+    section {
+      padding: 3rem 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1.4rem;
+    }
+
+    .item {
+      margin-bottom: 1.5rem;
+    }
+
+    .item:last-child { margin-bottom: 0; }
+
+    .item-title {
+      font-size: 1.15rem;
+      margin-bottom: 0.2rem;
+    }
+
+    .item p,
+    .about p,
+    .contact p,
+    footer p {
+      margin: 0.2rem 0 0;
+    }
+
+    a {
+      color: var(--link);
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    footer {
+      padding: 2rem 0 1rem;
+      color: var(--muted);
+      font-size: 0.96rem;
+    }
+
+    @media (max-width: 640px) {
+      header {
+        padding-top: 2.5rem;
+      }
+
+      nav a {
+        display: inline-block;
+        margin-bottom: 0.4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header id="top">
+      <h1>Peter A. O'Connor</h1>
+      <p class="subtitle">Playwright &amp; Short Story Writer<br>Perth, Western Australia</p>
+      <p class="tagline">Darkly comic stories and plays exploring regret, redemption, and the strange places where the living and the dead meet.</p>
+      <nav aria-label="Primary">
+        <a href="#plays">Plays</a>
+        <a href="#stories">Stories</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="plays">
+        <h2>Selected Plays</h2>
+
+        <article class="item">
+          <h3 class="item-title"><em>Twilight Mire</em></h3>
+          <p>A one-act play about ghosts, regret, and the possibility of redemption.</p>
+        </article>
+
+        <article class="item">
+          <h3 class="item-title"><em>SnoozeTime Tales</em></h3>
+          <p>A darkly comic play exploring sleep, storytelling, and memory.</p>
+        </article>
+      </section>
+
+      <section id="stories">
+        <h2>Selected Stories</h2>
+
+        <article class="item">
+          <h3 class="item-title"><em>A Hill To Die On</em></h3>
+          <p class="muted">Darkly comic short fiction.</p>
+        </article>
+
+        <article class="item">
+          <h3 class="item-title"><em>White Sky</em></h3>
+          <p class="muted">Literary short fiction.</p>
+        </article>
+
+        <article class="item">
+          <h3 class="item-title"><em>Battler</em></h3>
+          <p class="muted">Literary short fiction.</p>
+        </article>
+
+        <article class="item">
+          <h3 class="item-title"><em>Lucky Sal</em></h3>
+          <p class="muted">Comic short fiction.</p>
+        </article>
+      </section>
+
+      <section id="about" class="about">
+        <h2>About</h2>
+        <p>Peter A. O'Connor is a playwright and short story writer based in Perth, Western Australia.</p>
+        <p>His work blends dark humour with literary fiction and often explores regret, redemption, and the strange moments where the absurd and the tragic meet.</p>
+      </section>
+
+      <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:hello@peteraoconnorwriter.com">hello@peteraoconnorwriter.com</a></p>
+        <p class="muted">Replace this address with your preferred contact email when you're ready.</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>Peter A. O'Connor &copy; 2026</p>
+    </footer>
+  </div>
+</body>
+</html>
