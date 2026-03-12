@@ -1,0 +1,138 @@
+:root {
+  --bg: #fcfcfb;
+  --text: #222;
+  --muted: #666;
+  --line: #ddd8d1;
+  --link: #1f1f1f;
+  --max: 760px;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.75;
+}
+
+a { color: var(--link); text-decoration-thickness: 1px; text-underline-offset: 0.16rem; }
+a:hover, a:focus { text-decoration-thickness: 2px; }
+
+.wrap {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 4rem;
+}
+
+header.site-header {
+  padding: 3rem 0 2.25rem;
+  border-bottom: 1px solid var(--line);
+}
+
+nav.primary-nav {
+  margin-top: 1.4rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+nav.primary-nav a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+nav.primary-nav a.active,
+nav.primary-nav a:hover,
+nav.primary-nav a:focus {
+  color: var(--text);
+  text-decoration: underline;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: clamp(2.2rem, 5vw, 3.3rem);
+  letter-spacing: 0.01rem;
+}
+
+.page-title {
+  margin-bottom: 0.9rem;
+}
+
+.subtitle {
+  color: var(--muted);
+  margin-top: 0.65rem;
+  font-size: 1.03rem;
+}
+
+.tagline {
+  font-size: 1.18rem;
+  max-width: 40rem;
+  margin-top: 1.8rem;
+}
+
+main {
+  padding-top: 1.5rem;
+}
+
+section {
+  padding: 2.5rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+section:last-child,
+.page-content:last-child {
+  border-bottom: none;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.3rem;
+}
+
+.intro {
+  margin: 0 0 2rem;
+  color: var(--muted);
+}
+
+.work-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.work-item {
+  padding-bottom: 1.4rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.work-item:last-child { border-bottom: none; padding-bottom: 0; }
+.work-item h3 { font-size: 1.14rem; margin-bottom: 0.28rem; }
+.work-item p { margin: 0.2rem 0 0; }
+
+.page-content {
+  padding: 2.5rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.email-link { word-break: break-word; }
+
+footer {
+  padding-top: 2rem;
+  color: var(--muted);
+  font-size: 0.96rem;
+}
+
+.footer-line {
+  margin-top: 0.4rem;
+}
+
+@media (max-width: 640px) {
+  .wrap { padding-top: 1.5rem; }
+  header.site-header { padding-top: 2rem; }
+}
